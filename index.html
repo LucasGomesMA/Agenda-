@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" >
+    <title>Agenda</title>
+  </head>
+  <body >
+      <div class="container">
+          <div class="row">
+              <div class="col-5 alert alert-secondary" id="contacts">
+                  <h1>Agenda</h1>
+                  
+                    <form class="row" action="javascript:void(0)" onsubmit="add(event)">
+                      <div class="col-12 form-group">
+                        <input id="addcontact" type="text" placeholder="Add contact..." class="form-control" required>
+                      </div>
+                      <div class="col-8 form-group">
+                        <input id="number" type="tel" placeholder="Number..." class="form-control" required>
+                      </div>
+                      <div class="col-4">
+                        <button type="submit" class="btn form-control btn-success">Add</button>
+                      </div>
+                    </form>
+                  
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-5" id="contatos">
+
+            </div>
+          </div>
+      </div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="addcontact.js"></script>
+  </body>
+</html>
